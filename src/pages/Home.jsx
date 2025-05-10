@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import MainFeature from '../components/MainFeature';
@@ -429,9 +430,9 @@ export default function Home() {
                       </div>
                     </div>
                     
-                    <button className="btn-primary w-full">
+                    <Link to={`/property/${property.id}`} className="btn-primary w-full text-center">
                       View Details
-                    </button>
+                    </Link>
                   </div>
                 </motion.div>
               ))

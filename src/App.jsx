@@ -6,6 +6,7 @@ import getIcon from './utils/iconUtils';
 
 // Pages
 import Home from './pages/Home';
+import PropertyDetails from './pages/PropertyDetails';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/property/:id" element={<PropertyDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
